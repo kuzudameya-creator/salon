@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>スタイルギャラリー｜atelier nui</title>
+  <meta name="description" content="美容室 atelier nui のヘアスタイルギャラリー。ショート、ボブ、ロングのスタイルを担当スタイリストとあわせてご紹介します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Shippori+Mincho:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="header__logo">atelier nui</a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="stylist.html">Stylist</a></li>
+        <li><a href="gallery.html" aria-current="page">Gallery</a></li>
+        <li><a href="index.html#access">Access</a></li>
+        <li><a href="reserve.html" class="nav__reserve">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <p class="page-head__en" lang="en">Gallery</p>
+      <h1 class="page-head__ja">スタイルギャラリー</h1>
+    </div>
+    <div class="container gallery-page" style="padding-bottom: 112px">
+      <!-- ラジオボタンとCSSの :has() で絞り込み（JavaScriptなし） -->
+      <fieldset class="filter">
+        <legend>長さで絞り込む</legend>
+        <input type="radio" name="length" id="f-all" checked><label for="f-all" lang="en">All</label>
+        <input type="radio" name="length" id="f-short"><label for="f-short" lang="en">Short</label>
+        <input type="radio" name="length" id="f-bob"><label for="f-bob" lang="en">Bob</label>
+        <input type="radio" name="length" id="f-long"><label for="f-long" lang="en">Long</label>
+      </fieldset>
+
+      <ul class="styles">
+        <li data-length="bob">
+          <img src="gallery1.svg" alt="アッシュベージュの切りっぱなしボブ" width="600" height="800" loading="lazy">
+          <p class="styles__title">アッシュベージュの切りっぱなしボブ</p>
+          <p class="styles__meta">Bob／佐藤 みお</p>
+        </li>
+        <li data-length="long">
+          <img src="gallery2.svg" alt="ピンクブラウンのゆるウェーブ" width="600" height="800" loading="lazy">
+          <p class="styles__title">ピンクブラウンのゆるウェーブ</p>
+          <p class="styles__meta">Long／山本 さき</p>
+        </li>
+        <li data-length="short">
+          <img src="gallery3.svg" alt="ダークトーンの耳かけショート" width="600" height="800" loading="lazy">
+          <p class="styles__title">ダークトーンの耳かけショート</p>
+          <p class="styles__meta">Short／佐藤 みお</p>
+        </li>
+        <li data-length="long">
+          <img src="gallery4.svg" alt="ミルクティーのまとめ髪" width="600" height="800" loading="lazy">
+          <p class="styles__title">ミルクティーのまとめ髪</p>
+          <p class="styles__meta">Long／高橋 りく</p>
+        </li>
+        <li data-length="bob">
+          <img src="gallery5.svg" alt="髪質改善で艶めく黒髪ボブ" width="600" height="800" loading="lazy">
+          <p class="styles__title">髪質改善で艶めく黒髪ボブ</p>
+          <p class="styles__meta">Bob／山本 さき</p>
+        </li>
+        <li data-length="long">
+          <img src="gallery6.svg" alt="ハイトーンのベージュウェーブ" width="600" height="800" loading="lazy">
+          <p class="styles__title">ハイトーンのベージュウェーブ</p>
+          <p class="styles__meta">Long／高橋 りく</p>
+        </li>
+        <li data-length="short">
+          <img src="gallery7.svg" alt="カシスブラウンのショート" width="600" height="800" loading="lazy">
+          <p class="styles__title">カシスブラウンのショート</p>
+          <p class="styles__meta">Short／高橋 りく</p>
+        </li>
+        <li data-length="long">
+          <img src="gallery8.svg" alt="ナチュラルブラウンのポニーテール" width="600" height="800" loading="lazy">
+          <p class="styles__title">ナチュラルブラウンのポニーテール</p>
+          <p class="styles__meta">Long／山本 さき</p>
+        </li>
+      </ul>
+
+      <div class="insta">
+        <p>最新のスタイルはInstagramで更新しています</p>
+        <a href="#">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="0.8" fill="currentColor"/></svg>
+          @atelier_nui
+        </a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__cta">ご予約はWEBから24時間受け付けています</p>
+      <a href="reserve.html" class="btn btn--pink">WEB予約はこちら</a>
+      <p class="footer__logo">atelier nui</p>
+      <p class="footer__info">〒000-0000 ○○県○○市○○町1-2-3　TEL 000-000-0000<br>10:00〜19:00（最終受付 17:30）／火曜定休</p>
+      <small>&copy; atelier nui</small>
+    </div>
+  </footer>
+  <!-- スマホ用 固定予約ボタン -->
+  <a href="reserve.html" class="fixed-reserve">WEB予約</a>
+</body>
+</html>

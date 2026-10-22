@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>メニュー・料金｜atelier nui</title>
+  <meta name="description" content="美容室 atelier nui のメニューと料金。カット、カラー、髪質改善トリートメント、パーマ、ヘッドスパの料金と所要時間をご案内します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Shippori+Mincho:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="header__logo">atelier nui</a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list">
+        <li><a href="menu.html" aria-current="page">Menu</a></li>
+        <li><a href="stylist.html">Stylist</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#access">Access</a></li>
+        <li><a href="reserve.html" class="nav__reserve">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <p class="page-head__en" lang="en">Menu</p>
+      <h1 class="page-head__ja">メニュー・料金</h1>
+      <p class="page-head__lead">すべてのメニューにカウンセリングとシャンプー・ブローが含まれます。表示価格は税込です。ロングの方は料金が変わる場合があります。</p>
+    </div>
+    <nav aria-label="メニューの種類">
+      <ul class="menu-tags"><li><a href="#cut" lang="en">Cut</a></li><li><a href="#color" lang="en">Color</a></li><li><a href="#treatment" lang="en">Treatment</a></li><li><a href="#perm" lang="en">Perm</a></li><li><a href="#spa" lang="en">Head Spa</a></li></ul>
+    </nav>
+
+    <div class="menu-body" style="margin-top: 56px">
+      <div class="menu-body__inner">
+        <section id="cut" class="menu-cat">
+          <div class="menu-cat__head"><h2 class="menu-cat__en" lang="en">Cut</h2><span class="menu-cat__ja">カット</span></div>
+          <div class="menu-item"><div><p class="menu-item__name">カット</p><p class="menu-item__text">骨格と髪のクセを見て、乾かすだけでまとまる形に</p></div><p class="menu-item__price">¥6,600</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">前髪カット</p><p class="menu-item__text">前回ご来店から2か月以内の方</p></div><p class="menu-item__price">¥1,100</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">学生カット</p><p class="menu-item__text">高校生以下</p></div><p class="menu-item__price">¥4,400</p></div>
+        </section>
+
+        <section id="color" class="menu-cat">
+          <div class="menu-cat__head"><h2 class="menu-cat__en" lang="en">Color</h2><span class="menu-cat__ja">カラー</span></div>
+          <div class="menu-item"><div><p class="menu-item__name">カット＋カラー</p><p class="menu-item__text">いちばん人気。ダメージを抑える薬剤を使います</p></div><p class="menu-item__price">¥12,100</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">透明感カラー</p><p class="menu-item__text">赤みを抑えたくすみカラー。ブリーチなしで対応</p></div><p class="menu-item__price">¥8,800</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">根元リタッチ</p><p class="menu-item__text">伸びた根元3cmまで</p></div><p class="menu-item__price">¥5,500</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">ダブルカラー</p><p class="menu-item__text">ブリーチ1回＋カラー</p></div><p class="menu-item__price">¥16,500〜</p></div>
+        </section>
+
+        <section id="treatment" class="menu-cat">
+          <div class="menu-cat__head"><h2 class="menu-cat__en" lang="en">Treatment</h2><span class="menu-cat__ja">髪質改善</span><span class="menu-cat__badge">おすすめ</span></div>
+          <div class="menu-item"><div><p class="menu-item__name">髪質改善トリートメント</p><p class="menu-item__text">うねり・パサつきを内側から整え、ツヤのある手ざわりに</p></div><p class="menu-item__price">¥9,900</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">カット＋髪質改善</p><p class="menu-item__text">はじめての方はこちらがおすすめです</p></div><p class="menu-item__price">¥14,300</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">カラー＋髪質改善</p><p class="menu-item__text">色持ちとツヤを両立</p></div><p class="menu-item__price">¥17,600</p></div>
+        </section>
+
+        <section id="perm" class="menu-cat">
+          <div class="menu-cat__head"><h2 class="menu-cat__en" lang="en">Perm</h2><span class="menu-cat__ja">パーマ</span></div>
+          <div class="menu-item"><div><p class="menu-item__name">カット＋パーマ</p><p class="menu-item__text">ゆるいニュアンスから、しっかりめのウェーブまで</p></div><p class="menu-item__price">¥13,200</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">縮毛矯正</p><p class="menu-item__text">毛先までまっすぐにしすぎない、自然な仕上がり</p></div><p class="menu-item__price">¥19,800〜</p></div>
+        </section>
+
+        <section id="spa" class="menu-cat">
+          <div class="menu-cat__head"><h2 class="menu-cat__en" lang="en">Head Spa</h2><span class="menu-cat__ja">ヘッドスパ</span></div>
+          <div class="menu-item"><div><p class="menu-item__name">ヘッドスパ 30分</p><p class="menu-item__text">他メニューと組み合わせて</p></div><p class="menu-item__price">¥4,400</p></div>
+          <div class="menu-item"><div><p class="menu-item__name">ヘッドスパ 60分</p><p class="menu-item__text">首・肩のマッサージ付き。単品でもどうぞ</p></div><p class="menu-item__price">¥7,700</p></div>
+        </section>
+      </div>
+    </div>
+
+    <div class="section container">
+      <div class="notes">
+        <section><h2>はじめての方へ</h2><p>初回は30分ほどお時間を多めにいただき、髪の悩みやお手入れの方法を伺います。</p></section>
+        <section><h2>指名料について</h2><p>オーナー指名は＋¥1,100、その他のスタイリストは無料です。</p></section>
+        <section><h2>キャンセルについて</h2><p>前日までにご連絡ください。当日のキャンセルは料金の50%をいただきます。</p></section>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__cta">ご予約はWEBから24時間受け付けています</p>
+      <a href="reserve.html" class="btn btn--pink">WEB予約はこちら</a>
+      <p class="footer__logo">atelier nui</p>
+      <p class="footer__info">〒000-0000 ○○県○○市○○町1-2-3　TEL 000-000-0000<br>10:00〜19:00（最終受付 17:30）／火曜定休</p>
+      <small>&copy; atelier nui</small>
+    </div>
+  </footer>
+  <!-- スマホ用 固定予約ボタン -->
+  <a href="reserve.html" class="fixed-reserve">WEB予約</a>
+</body>
+</html>

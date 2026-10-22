@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>スタイリスト紹介｜atelier nui</title>
+  <meta name="description" content="美容室 atelier nui のスタイリスト紹介。髪質改善、ショート・ボブ、ブリーチ・デザインカラーなど、それぞれの得意分野と経歴、指名料をご案内します。">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital@0;1&family=Shippori+Mincho:wght@400;600&family=Zen+Kaku+Gothic+New:wght@400;500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="header">
+    <a href="index.html" class="header__logo">atelier nui</a>
+    <nav class="nav" aria-label="グローバルナビゲーション">
+      <ul class="nav__list">
+        <li><a href="menu.html">Menu</a></li>
+        <li><a href="stylist.html" aria-current="page">Stylist</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+        <li><a href="index.html#access">Access</a></li>
+        <li><a href="reserve.html" class="nav__reserve">Reserve</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <div class="page-head">
+      <p class="page-head__en" lang="en">Stylist</p>
+      <h1 class="page-head__ja">スタイリスト</h1>
+      <p class="page-head__lead">3人それぞれに得意な分野があります。指名なしでも、ご要望に合わせて担当をおすすめします。</p>
+    </div>
+    <div class="container stylists">
+      <section class="stylist">
+        <img class="stylist__image" src="stylist1.svg" alt="山本 さき" width="600" height="600" loading="lazy">
+        <div class="stylist__body">
+          <p class="stylist__role" lang="en">Owner Stylist</p>
+          <h2 class="stylist__name">山本 さき<span lang="en">Saki Yamamoto</span></h2>
+          <p>「毎朝の5分をラクにする」が目標です。髪のクセや生えぐせを見て、ご自宅で再現しやすいスタイルをご提案します。</p>
+          <dl class="profile-table">
+            <dt>得意</dt><dd>髪質改善・透明感カラー</dd>
+            <dt>経歴</dt><dd>都内サロンで12年勤務ののち、2020年に独立</dd>
+            <dt>指名料</dt><dd>¥1,100</dd>
+          </dl>
+          <div class="stylist__links">
+            <a href="reserve.html" class="btn btn--dark">指名して予約する</a>
+            <a href="gallery.html">担当したスタイルを見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stylist stylist--reverse">
+        <img class="stylist__image" src="stylist2.svg" alt="佐藤 みお" width="600" height="600" loading="lazy">
+        <div class="stylist__body">
+          <p class="stylist__role" lang="en">Stylist</p>
+          <h2 class="stylist__name">佐藤 みお<span lang="en">Mio Sato</span></h2>
+          <p>ショートやボブは、数ミリの違いで印象が変わります。横顔や首のラインまで見て、すっきり見える長さを一緒に探します。</p>
+          <dl class="profile-table">
+            <dt>得意</dt><dd>ショート・ボブ・前髪カット</dd>
+            <dt>経歴</dt><dd>美容師歴8年。2021年より在籍</dd>
+            <dt>指名料</dt><dd>無料</dd>
+          </dl>
+          <div class="stylist__links">
+            <a href="reserve.html" class="btn btn--dark">指名して予約する</a>
+            <a href="gallery.html">担当したスタイルを見る</a>
+          </div>
+        </div>
+      </section>
+
+      <section class="stylist">
+        <img class="stylist__image" src="stylist3.svg" alt="高橋 りく" width="600" height="600" loading="lazy">
+        <div class="stylist__body">
+          <p class="stylist__role" lang="en">Stylist</p>
+          <h2 class="stylist__name">高橋 りく<span lang="en">Riku Takahashi</span></h2>
+          <p>ハイトーンやデザインカラーも、ダメージをできるだけ抑えて仕上げます。色落ちしたあとの色まで考えてご提案します。</p>
+          <dl class="profile-table">
+            <dt>得意</dt><dd>ブリーチ・デザインカラー・メンズ</dd>
+            <dt>経歴</dt><dd>美容師歴6年。2022年より在籍</dd>
+            <dt>指名料</dt><dd>無料</dd>
+          </dl>
+          <div class="stylist__links">
+            <a href="reserve.html" class="btn btn--dark">指名して予約する</a>
+            <a href="gallery.html">担当したスタイルを見る</a>
+          </div>
+        </div>
+      </section>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__cta">ご予約はWEBから24時間受け付けています</p>
+      <a href="reserve.html" class="btn btn--pink">WEB予約はこちら</a>
+      <p class="footer__logo">atelier nui</p>
+      <p class="footer__info">〒000-0000 ○○県○○市○○町1-2-3　TEL 000-000-0000<br>10:00〜19:00（最終受付 17:30）／火曜定休</p>
+      <small>&copy; atelier nui</small>
+    </div>
+  </footer>
+  <!-- スマホ用 固定予約ボタン -->
+  <a href="reserve.html" class="fixed-reserve">WEB予約</a>
+</body>
+</html>
